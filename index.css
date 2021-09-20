@@ -248,14 +248,16 @@
   width: 100%;
 }
 
+.recently-reviewed-gallery {
+  height: 300px;
+}
+
 .hotel-profile-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   position: relative;
-  /* max-width: 25%;
-  min-width: 20%; */
   width: 23%;
   margin: var(--spacer-m);
 }
@@ -271,26 +273,60 @@
   left: 15px;
 }
 
+
 .hotel-image-container {
+  position: relative;
   width: 100%;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
 
 .hotel-image {
-  height: 100%;
   width: 100%;
 }
 
 .hotel-description-card {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 50%;
+  height: 100px;
+  padding: var(--spacer-l);
   border-radius: 10px;
   background-color: var(--clr-primary-white);
   box-shadow: 0 10px 10px 0 rgb(0 0 0 / 20%);
+  font-family: var(--ff-primary);
   box-sizing: border-box;
   position: absolute; 
   top: 180px;
+}
+
+.hotel-name-container {
+  margin-bottom: var(--spacer-l);
+}
+
+.hotel-name {
+  color: var(--clr-font-grey);
+  font-size: var(--fs-s);
+}
+
+.hotel-price {
+  font-size: var(--fs-m);
+  font-weight: bold;
+  margin-left: var(--spacer-xl);
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
+
+.hotel-address-container {
+  display: flex;
+  align-items: center;
+}
+
+.hotel-address {
+  color: var(--clr-font-grey);
+  margin-left: var(--spacer-m);
+  font-size: var(--fs-s);
 }
 
 .suggested-stay-card {
@@ -345,8 +381,6 @@
 
 
 
-
-
 /*media-query*/
 @media (max-width: 1200px) {
   .navbar-container {
@@ -368,6 +402,7 @@
   .photo-gallery {
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 700px;
   }
 
   .hotel-profile-card, .suggested-flight-card, .suggested-car-card {
