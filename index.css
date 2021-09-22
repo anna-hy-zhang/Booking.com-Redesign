@@ -8,6 +8,7 @@
   
   --clr-font-blue: #0F367C;
   --clr-font-grey: #454545;
+  --clr-font-light-grey: #6f6e6e;
   --clr-font-white: #fff;
 
   --ff-primary: 'Montserrat', sans-serif;
@@ -263,8 +264,15 @@
 }
 
 .hotel-card-tag {
-  height: 55px;
-  width: 55px;
+  /* height: 55px;
+  width: 55px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 18%;
+  width: 20%;
   border-radius: 10px 10px 10px 0;
   box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 30%);
   background-color: var(--clr-primary-white);
@@ -273,15 +281,30 @@
   left: 15px;
 }
 
+.hotel-rating {
+  font-size: var(--fs-m);
+  color: var(--clr-font-blue);
+  font-weight: bold;
+}
+
+.hotel-tag-divider {
+  background-color: var(--clr-primary-grey2);
+  height: 1px;
+  width: 100%;
+}
+
+.hotel-rating-num {
+  color: var(--clr-font-grey);
+  font-weight: lighter;
+}
 
 .hotel-image-container {
-  position: relative;
-  width: 100%;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
 
 .hotel-image {
+  position: relative;
   width: 100%;
 }
 
@@ -297,7 +320,7 @@
   font-family: var(--ff-primary);
   box-sizing: border-box;
   position: absolute; 
-  top: 180px;
+  top: 60%;
 }
 
 .hotel-name-container {
@@ -310,9 +333,9 @@
 }
 
 .hotel-price {
+  margin-left: var(--spacer-xl);
   font-size: var(--fs-m);
   font-weight: bold;
-  margin-left: var(--spacer-xl);
   position: absolute;
   top: 18px;
   right: 15px;
@@ -324,9 +347,23 @@
 }
 
 .hotel-address {
-  color: var(--clr-font-grey);
-  margin-left: var(--spacer-m);
+  color: var(--clr-font-light-grey);
+  margin-left: var(--spacer-s);
   font-size: var(--fs-s);
+}
+
+.suggested-stays-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 100%;
+}
+
+.suggested-stay-card {
+  width: 40%;
+  height: 30%;
+  background-color: var(--clr-primary-grey1);
+  border-radius: 10px;
 }
 
 .suggested-stay-card {
@@ -382,7 +419,7 @@
 
 
 /*media-query*/
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .navbar-container {
     height: 220px;
   }
@@ -406,8 +443,12 @@
   }
 
   .hotel-profile-card, .suggested-flight-card, .suggested-car-card {
-    width: 30%;
+    width: 31%;
     min-width: 220px;
+  }
+
+  .hotel-description-card {
+    height: 30%;
   }
 
   .calender-container, .guest-container {
@@ -415,7 +456,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .navbar-container {
     height: 180px;
   }
