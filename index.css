@@ -355,19 +355,49 @@
 .suggested-stays-gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   height: 500px;
   width: 100%;
 }
 
 .suggested-stay-card {
-  width: 40%;
-  height: 30%;
-  background-color: var(--clr-primary-grey1);
+  width: 48%;
+  height: 38%;
   border-radius: 10px;
+  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 20%);
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
-.suggested-stay-card {
-  width: 50%;
+.suggested-stay-card-title {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 50px;
+}
+
+.title {
+  font-size: var(--fs-m);
+  color: var(--clr-font-white);
+  margin-left: var(--spacer-l);
+  font-weight: bold;
+  position: absolute;
+  width: 200px;
+}
+
+.suggested-stay-image-1 {
+  position: absolute;
+  top: -220px;
+  width: 580px;
+}
+
+.suggested-stay-image-2 {
+  position: absolute;
+  top: -180px;
+  width: 580px;
 }
 
 .suggested-flight-card {
