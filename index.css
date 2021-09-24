@@ -376,6 +376,14 @@
   width: 200px;
 }
 
+.suggested-stay-card-subtitle {
+  margin-left: var(--spacer-l);
+  color: var(--clr-font-white);
+  font-size: var(--fs-s);
+  position: absolute;
+  top: 55px;
+  width: 200px;
+}
 
 /* suggested-flights-gallery */
 .suggested-flights-gallery-grid {
