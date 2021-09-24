@@ -1,14 +1,15 @@
 /* general style */
 
 :root { 
-  --clr-primary-grey1: #454545;
-  --clr-primary-grey2: #6D6D6D;
-  --clr-primary-white: #ffffff;
+  --clr-primary-grey1: #333;
+  --clr-primary-grey2: #666;
+  --clr-primary-grey3: #d4d4d4;
+  --clr-primary-white: #fff;
   --clr-primary-blue: #0F367C;
   
   --clr-font-blue: #0F367C;
-  --clr-font-grey: #454545;
-  --clr-font-light-grey: #6f6e6e;
+  --clr-font-grey: #333;
+  --clr-font-light-grey: #666;
   --clr-font-white: #fff;
 
   --ff-primary: 'Montserrat', sans-serif;
@@ -16,6 +17,7 @@
  
   --fs-s: 16px;
   --fs-m: 20px;
+  --fs-xm: 25px;
   --fs-b: 30px;
   --fs-mb: 40px;
   --fs-xb: 50px;
@@ -236,8 +238,9 @@
   margin-top: var(--spacer-xl); 
 }
 
-.section-title {
-  font-size: var(--fs-m);                             
+.section-title { 
+  font-weight: 500; 
+  font-size: var(--fs-m);                           
   color: var(--clr-font-grey);
   margin-bottom: var(--spacer-l);
 }
@@ -252,7 +255,7 @@
 
 .recently-reviewed-gallery-grid {
   width: 25%;
-  margin-bottom: var(--spacer-l);
+  margin-bottom: var(--spacer-m);
   padding: var(--spacer-m);
   box-sizing: border-box;
 }
@@ -325,13 +328,14 @@
 }
 
 .hotel-name {
+  font-weight: 500;
   font-size: var(--fs-s);
   color: var(--clr-font-grey);
 }
 
 .hotel-price {
   margin-left: auto;
-  font-weight: bold;
+  font-weight: 600;
   font-size: var(--fs-m);
 }
 
@@ -340,6 +344,7 @@
 }
 
 .hotel-address {
+  font-weight: 300;
   font-size: var(--fs-s);
   margin-left: var(--spacer-s);
   color: var(--clr-font-grey);
@@ -349,7 +354,7 @@
 /* suggested-stays-gallery */
 .suggested-stays-gallery-grid {
   width: 50%;
-  margin-bottom: var(--spacer-l);
+  margin-bottom: var(--spacer-m);
   padding: var(--spacer-m);
   box-sizing: border-box;
 }
@@ -362,6 +367,7 @@
 }
 
 .suggested-stay-image {
+  display: block;
   border-radius: 10px;
   box-shadow: 0 10px 10px 0 rgb(0 0 0 / 20%);
 }
@@ -370,44 +376,93 @@
   margin-left: var(--spacer-l);
   color: var(--clr-font-white);
   font-size: var(--fs-m);
-  font-weight: bold;
+  font-weight: 500;
   position: absolute;
-  top: 75px;
+  top: 40%;
   width: 200px;
 }
 
 .suggested-stay-card-subtitle {
   margin-left: var(--spacer-l);
+  margin-bottom: var(--spacer-s);
   color: var(--clr-font-white);
   font-size: var(--fs-s);
+  font-weight: 300;
   position: absolute;
-  top: 55px;
+  top: 28%;
   width: 200px;
 }
+
 
 /* suggested-flights-gallery */
 .suggested-flights-gallery-grid {
   display: flex;
   width: 25%;
+  padding: var(--spacer-m);
+  box-sizing: border-box;
+  margin-bottom: var(--spacer-m);
 }
 
 .suggested-flight-card {
   width: 100%;
-  margin: var(--spacer-m);
+  padding: var(--spacer-l);
   display: flex;
+  border: 1px solid var(--clr-primary-grey3);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 20%);
+  background-color: var(--clr-primary-white);
+}
+
+.flight-info-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--spacer-xl);
+}
+
+.flight-info-item {
+  margin-bottom: var(--spacer-s);
+}
+
+.icon-like {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.flight-price {
+  font-family: bold;
+  font-size: var(--fs-xm);
+  font-family: var(--ff-primary);
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+
+.flight-time {
+  font-weight: bold;
+}
+
+.flight-location, .flight-span, .flight-type {
+  font-weight: lighter;
+}
+
+.flight-location {
+  margin-bottom: var(--spacer-l);
 }
 
 
 /* suggested-cars-gallery */
 .suggested-cars-gallery-grid {
-  display: flex;
   width: 25%;
 }
 
 .suggested-car-card {
   width: 100%;
   margin: var(--spacer-m);
+  box-sizing: border-box;
   display: flex;
+  justify-content: center;
 }
 
 
@@ -460,7 +515,10 @@
     height: 220px;
   }
 
-  .subtitle, .search-menu, .calender-container, .guest-container {
+  .subtitle, 
+  .search-menu, 
+  .calender-container, 
+  .guest-container {
     display: none;
   } 
 
@@ -472,27 +530,20 @@
     min-width: 100px;
   }
   
-  .recently-reviewed-gallery-grid {
+  .recently-reviewed-gallery-grid, 
+  .suggested-flights-gallery-grid, 
+  .suggested-cars-gallery-grid {
     width: 33%;
   }
-
-  .suggested-flight-card,
-  .suggested-car-card {
-    width: 31%;
-    min-width: 220px;
-  }
-
-  .hotel-description-card {
-    height: 30%;
-  }
 }
+
 
 @media (max-width: 900px) {
   .navbar-container {
     height: 180px;
   }
 
-  .navbar, .subtitle, .search-menu {
+  .navbar {
     display: none;
   } 
 
@@ -505,8 +556,14 @@
     min-width: 40px;
   }
 
-  .recently-reviewed-gallery-grid {
+  .recently-reviewed-gallery-grid, 
+  .suggested-flights-gallery-grid, 
+  .suggested-cars-gallery-grid {
     width: 50%;
+  }
+
+  .suggested-stays-gallery-grid {
+    width: 100%;
   }
 } 
 
@@ -517,7 +574,11 @@
   }
 
   .recently-reviewed-gallery-grid {
-    width: 100%;
+    margin-bottom: var(--spacer-xl);
+  }
+
+  .suggested-stay-card-title {
+    font-size: var(--fs-s);
   }
 }
 
