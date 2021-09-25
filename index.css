@@ -516,13 +516,16 @@
 }
 
 .car-image {
-  /* margin:  var(--spacer-l); */
   margin-top: calc(var(--spacer-xl) * 1.5);
   margin-bottom: var(--spacer-xl);
 }
 
 .car-name {
   font-weight: 500;
+}
+
+.icon-car-card {
+  margin-bottom: 0;
 }
 
 
