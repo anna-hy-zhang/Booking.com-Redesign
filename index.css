@@ -290,7 +290,7 @@
 .hotel-rating {
   font-size: var(--fs-m);
   color: var(--clr-font-blue);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .hotel-tag-divider {
@@ -301,7 +301,7 @@
 
 .hotel-rating-num {
   color: var(--clr-font-grey);
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .hotel-image {
@@ -407,9 +407,9 @@
   width: 100%;
   padding: var(--spacer-l);
   display: flex;
-  border: 1px solid var(--clr-primary-grey3);
   position: relative;
   border-radius: 10px;
+  border: 1px solid var(--clr-primary-grey3);
   box-shadow: 0 10px 10px 0 rgb(0 0 0 / 20%);
   background-color: var(--clr-primary-white);
 }
@@ -431,16 +431,16 @@
 }
 
 .flight-price {
-  font-family: bold;
-  font-size: var(--fs-xm);
+  font-weight: 600;
+  font-size: var(--fs-m);
   font-family: var(--ff-primary);
   position: absolute;
-  bottom: 20px;
-  right: 15px;
+  bottom: 22px;
+  right: 18px;
 }
 
 .flight-time {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .flight-location, .flight-span, .flight-type {
@@ -455,14 +455,74 @@
 /* suggested-cars-gallery */
 .suggested-cars-gallery-grid {
   width: 25%;
+  box-sizing: border-box;
+  padding: var(--spacer-m);
+  margin-bottom: var(--spacer-m);
 }
 
 .suggested-car-card {
   width: 100%;
-  margin: var(--spacer-m);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary-white);
+  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 20%);
+  border: 1px solid var(--clr-primary-grey3);
+  border-radius: 10px;
+  position: relative;
+  padding: var(--spacer-m);
   box-sizing: border-box;
+}
+
+.car-info-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: var(--spacer-l);
+}
+
+.suggested-car-card-tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 20%;
+  width: 20%;
+  border-radius: 10px 10px 10px 0;
+  box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 30%);
+  background-color: var(--clr-primary-white);
+  position: absolute;
+  top: -15px;
+  left: 15px;
+}
+
+.car-tag-divider {
+  background-color: var(--clr-primary-grey2);
+  height: 1px;
+  width: 100%;
+}
+
+.car-rating {
+  font-size: var(--fs-m);
+  color: var(--clr-font-blue);
+  font-weight: 600;
+}
+
+.car-rating-num {
+  color: var(--clr-font-grey);
+  font-weight: 300;
+}
+
+.car-image {
+  /* margin:  var(--spacer-l); */
+  margin-top: calc(var(--spacer-xl) * 1.5);
+  margin-bottom: var(--spacer-xl);
+}
+
+.car-name {
+  font-weight: 500;
 }
 
 
