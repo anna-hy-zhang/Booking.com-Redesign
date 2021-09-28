@@ -9,31 +9,35 @@
     <div class="mainbody">
       <div class="navbar-container">
         <div class="navbar">
-          <img src="./Booking.com.svg" alt="" class="website-logo">
+          <a href="#" class="website-logo">
+            <img src="./Booking.com.svg" alt="website-logo">
+          </a>
           <a href="#" class="nav-item">Booked</a>
           <a href="#" class="nav-item">Saved</a>
           <a href="#" class="nav-item">Notifications</a> 
-          <div class="avatar"></div>
-          <a href="#" class="nav-item username">Anna</a>
+          <a href="#" class="nav-item avatar-container">
+            <div class="avatar"></div>
+            <div class="username">Anna</div>
+          </a>
         </div>
         <h1 class="subtitle">Where to next, Anna?</h1>
         <div class="search-bar-container">
           <div class="search-menu">
-            <a href="#" class="selected-item search-item">Stays</a>
+            <a href="#" class="search-item selected-item">Stays</a>
             <a href="#" class="search-item">Flights</a>
             <a href="#" class="search-item">Cars</a>
-            <button class="drop-down-menu search-item">More</button>
+            <a href="#" class="search-item drop-down-menu">More</a>
           </div>
           <div class="search-bar">
             <input type="text" class="typebox" placeholder="">
-            <div class="calender-container search-item-wrapper">
+            <a href="#" class="calender-container search-item-wrapper">
               <img src="./calendar-logo.svg" alt="" class="calender-logo">
-              <button class="calender">03 March - 06 March</button>
-            </div>
-            <div class="guest-container search-item-wrapper">
+              <div>03 March - 06 March</div>
+            </a>
+            <a href="#" class="guest-container search-item-wrapper">
               <img src="./icon-user-1.svg" alt="" class="guest-logo">
-              <button class="guest">2 Guests</button>
-            </div>
+              <div>2 Guests</div>
+            </a>
             <button class="search-button">Search</button>
           </div>
         </div>
@@ -46,6 +50,7 @@
           <div class="recently-reviewed-gallery-grid">
             <div class="hotel-profile-card">
               <img src="./hotel-image-1.jpg" alt="image" class="hotel-image">
+              <img src="./icon-like.svg" alt="icon" class="hotel-like-icon">
               <div class="hotel-card-tag">
                 <span class="hotel-rating">4.8</span>
                 <div class="hotel-tag-divider"></div>
@@ -67,6 +72,7 @@
           <div class="recently-reviewed-gallery-grid">
             <div class="hotel-profile-card">
               <img src="./hotel-image-2.jpg" alt="image" class="hotel-image">
+              <img src="./icon-like.svg" alt="icon" class="hotel-like-icon">
               <div class="hotel-card-tag">
                 <span class="hotel-rating">4.7</span>
                 <div class="hotel-tag-divider"></div>
@@ -88,6 +94,7 @@
           <div class="recently-reviewed-gallery-grid">
             <div class="hotel-profile-card">
               <img src="./hotel-image-3.jpg" alt="image" class="hotel-image">
+              <img src="./icon-like.svg" alt="icon" class="hotel-like-icon">
               <div class="hotel-card-tag">
                 <span class="hotel-rating">4.6</span>
                 <div class="hotel-tag-divider"></div>
@@ -109,6 +116,7 @@
           <div class="recently-reviewed-gallery-grid">
             <div class="hotel-profile-card">
               <img src="./hotel-image-4.jpg" alt="image" class="hotel-image">
+              <img src="./icon-like.svg" alt="icon" class="hotel-like-icon">
               <div class="hotel-card-tag">
                 <span class="hotel-rating">4.8</span>
                 <div class="hotel-tag-divider"></div>
@@ -156,54 +164,70 @@
         <div class="suggested-flights-gallery photo-gallery">
           <div class="suggested-flights-gallery-grid">
             <div class="suggested-flight-card">
-              <img src="./icon-flight.svg" alt="" class="icon-flight">
-              <img src="./icon-like.svg" alt="" class="icon-like">
+              <div class="flight-icon-container">
+                <img src="./icon-flight.svg" alt="" class="icon-flight">
+              </div>
               <div class="flight-info-container">
                 <span class="flight-time flight-info-item">10:00-15:00</span>
                 <span class="flight-location flight-info-item">JFK-SFO</span>
                 <span class="flight-span flight-info-item">5h 30m</span>
                 <span class="flight-type flight-info-item">Non-stop</span>
               </div>
-              <div class="flight-price">$530</div>
+              <div class="flight-price-container">
+                <img src="./icon-like.svg" alt="" class="icon-like">
+                <div class="flight-price">$530</div>
+              </div>
             </div>
           </div>  
           <div class="suggested-flights-gallery-grid">  
             <div class="suggested-flight-card">
-              <img src="./icon-flight.svg" alt="" class="icon-flight">
-              <img src="./icon-like.svg" alt="" class="icon-like">
+              <div class="flight-icon-container">
+                <img src="./icon-flight.svg" alt="" class="icon-flight">
+              </div>
               <div class="flight-info-container">
                 <span class="flight-time flight-info-item">11:00-16:00</span>
                 <span class="flight-location flight-info-item">JFK-SFO</span>
                 <span class="flight-span flight-info-item">5h 30m</span>
                 <span class="flight-type flight-info-item">Non-stop</span>
               </div>
-              <div class="flight-price">$545</div>
+              <div class="flight-price-container">
+                <img src="./icon-like.svg" alt="" class="icon-like">
+                <div class="flight-price">$545</div>
+              </div>
             </div>
           </div>
           <div class="suggested-flights-gallery-grid">  
             <div class="suggested-flight-card">
-              <img src="./icon-flight.svg" alt="" class="icon-flight">
-              <img src="./icon-like.svg" alt="" class="icon-like">
+              <div class="flight-icon-container">
+                <img src="./icon-flight.svg" alt="" class="icon-flight">
+              </div>
               <div class="flight-info-container">
                 <span class="flight-time flight-info-item">12:00-17:00</span>
                 <span class="flight-location flight-info-item">JFK-SFO</span>
                 <span class="flight-span flight-info-item">5h 30m</span>
                 <span class="flight-type flight-info-item">Non-stop</span>
               </div>
-              <div class="flight-price">$555</div>
+              <div class="flight-price-container">
+                <img src="./icon-like.svg" alt="" class="icon-like">
+                <div class="flight-price">$555</div>         
+              </div>
             </div>
           </div> 
           <div class="suggested-flights-gallery-grid">  
             <div class="suggested-flight-card">
-              <img src="./icon-flight.svg" alt="" class="icon-flight">
-              <img src="./icon-like.svg" alt="" class="icon-like">
+              <div class="flight-icon-container">
+                <img src="./icon-flight.svg" alt="" class="icon-flight">
+              </div>
               <div class="flight-info-container">
                 <span class="flight-time flight-info-item">15:00-18:00</span>
                 <span class="flight-location flight-info-item">JFK-SFO</span>
                 <span class="flight-span flight-info-item">5h 30m</span>
                 <span class="flight-type flight-info-item">Non-stop</span>
               </div>
-              <div class="flight-price">$565</div>
+              <div class="flight-price-container">     
+                <img src="./icon-like.svg" alt="" class="icon-like">
+                <div class="flight-price">$565</div>
+              </div>
             </div>
           </div>  
         </div>
@@ -215,92 +239,108 @@
         <div class="suggested-cars-gallery photo-gallery">
           <div class="suggested-cars-gallery-grid">
             <div class="suggested-car-card">
+              <img src="./icon-like.svg" alt="" class="car-card-like-icon">
               <div class="suggested-car-card-tag">
                 <span class="car-rating">4.8</span>
                 <div class="car-tag-divider"></div>
                 <span class="car-rating-num">(1528)</span>
               </div>
               <img src="./car-image-1.svg" alt="" class="car-image">
-              <div class="car-name">Mercedes C300</div>
               <div class="car-info-container">
-                <img src="./icon-car-type.svg" alt="">
-                <div class="user-info-container">
-                  <img src="./icon-user-2.svg" alt="">
-                  <span class="user-num">4</span>
+                <div class="car-name">Mercedes C300</div>
+                <div class="car-info">
+                  <img src="./icon-car-type.svg" alt="" class="car-type car-info-item">
+                  <div class="user-num-container car-info-item">
+                    <img src="./icon-user-2.svg" alt="image" class="icon-user">
+                    <div class="user-num">4</div>
+                  </div>
+                  <div class="luggage-num-container car-info-item">
+                    <img src="./icon-luggage.svg" alt="image" class="icon-luggage">
+                    <div class="luggage-num">4</div>
+                  </div>
+                  <div class="car-price car-info-item">$220</div>
                 </div>
-                <div class="luggage-info-container">
-                  <img src="./icon-luggage.svg" alt="">
-                  <span class="luggage-num">4</span>
-                </div>
-                <div class="car-price">$200</div>
               </div>
             </div>
           </div>  
 
           <div class="suggested-cars-gallery-grid">
             <div class="suggested-car-card">
+              <img src="./icon-like.svg" alt="" class="car-card-like-icon">
               <div class="suggested-car-card-tag">
                 <span class="car-rating">4.8</span>
                 <div class="car-tag-divider"></div>
                 <span class="car-rating-num">(1528)</span>
               </div>
               <img src="./car-image-2.svg" alt="" class="car-image">
-              <div class="car-name">Mercedes C300</div>
               <div class="car-info-container">
-                <img src="./icon-car-type.svg" alt="">
-                <div class="user-info-container">
-                  <img src="icon-user-2.svg" alt="">
-                  <span class="user-num">4</span>
+                <div class="car-name">Mercedes C300</div>    
+                <div class="car-info">
+                  <img src="./icon-car-type.svg" alt="image" class="car-type car-info-item">
+                  <div class="user-num-container car-info-item">
+                    <img src="icon-user-2.svg" alt="image" class="icon-user">
+                    <div class="user-num">4</div>
+                  </div>
+                  <div class="luggage-num-container car-info-item">
+                    <img src="./icon-luggage.svg" alt="image" class="icon-luggage">
+                    <div class="luggage-num">4</div>
+                  </div>
+                  <div class="car-price car-info-item">$240</div>
                 </div>
-                <div class="luggage-info-container">
-                  <img src="./icon-luggage.svg" alt="">
-                  <span class="luggage-num">4</span>
-                </div>
-                <div class="car-price">$200</div>
               </div>
             </div>
           </div>  
 
           <div class="suggested-cars-gallery-grid">
             <div class="suggested-car-card">
+              <img src="./icon-like.svg" alt="" class="car-card-like-icon">
               <div class="suggested-car-card-tag">
                 <span class="car-rating">4.7</span>
                 <div class="car-tag-divider"></div>
                 <span class="car-rating-num">(1528)</span>
               </div>
               <img src="./car-image-3.svg" alt="" class="car-image">
-              <div class="car-name">Mercedes C300</div>
               <div class="car-info-container">
-                <img src="./icon-car-type.svg" alt="">
-                <div class="user-info-container">
-                  <img src="./icon-user-2.svg" alt="">
-                  <span class="user-num">4</span>
+                <div class="car-name">Mercedes C300</div>
+                <div class="car-info">
+                  <img src="./icon-car-type.svg" alt="image" class="car-type car-info-item">
+                  <div class="user-num-container car-info-item">
+                    <img src="./icon-user-2.svg" alt="image" class="icon-user">
+                    <div class="user-num">4</div>
+                  </div>
+                  <div class="luggage-num-container car-info-item">
+                    <img src="./icon-luggage.svg" alt="image" class="icon-luggage">
+                    <div class="luggage-num">4</div>
+                  </div>
+                  <div class="car-price car-info-item">$250</div>
                 </div>
-                <div class="luggage-info-container">
-                  <img src="./icon-luggage.svg" alt="">
-                  <span class="luggage-num">4</span>
-                </div>
-                <div class="car-price">$200</div>
               </div>
             </div>
           </div>  
 
           <div class="suggested-cars-gallery-grid">
             <div class="suggested-car-card">
+              <img src="./icon-like.svg" alt="" class="car-card-like-icon">
               <div class="suggested-car-card-tag">
                 <span class="car-rating">4.6</span>
                 <div class="car-tag-divider"></div>
                 <span class="car-rating-num">(1528)</span>
               </div>
               <img src="./car-image-4.svg" alt="" class="car-image">
-              <div class="car-name">Mercedes C300</div>
               <div class="car-info-container">
-                <img src="./icon-car-type.svg" alt="icon">
-                <img src="./icon-user-2.svg" alt="" class="icon-car-card">
-                <span class="user-num">4</span>
-                <img src="./icon-luggage.svg" alt="" class="icon-car-card">
-                <span class="luggage-num">4</span>
-                <div class="car-price">$200</div>
+                <div class="car-name">Mercedes C300</div>
+                <div class="car-info">
+                  <img src="./icon-car-type.svg" alt="image" class="car-type car-info-item">
+                  <div class="user-num-container car-info-item">
+                    <img src="./icon-user-2.svg" alt="image" class="icon-user">
+                    <div class="user-num">4</div>
+                  </div>
+                  <div class="luggage-num-container car-info-item">
+                    <img src="./icon-luggage.svg" alt="image" class="icon-luggage">
+                    <div class="luggage-num">4</div>
+                  </div>
+                  <div class="car-price car-info-item ">$270</div>
+                </div>
               </div>
             </div>
           </div>  
@@ -313,12 +353,50 @@
         <div class="divider"></div>
         <div class="footer">
           <img src="./Booking.com-logo-footer.svg" alt="image" class="footer-logo">
-          <img src="./footer-item-1.svg" alt="image" class="footer-item">
-          <img src="./footer-item-2.svg" alt="image" class="footer-item">
-          <img src="./footer-item-3.svg" alt="image" class="footer-item">
-          <img src="./footer-item-4.svg" alt="image" class="footer-item">
+          <div class="footer-menu-container">
+            <div class="footer-menu-grid">
+              <div class="footer-menu">
+                <div class="footer-menu-subtitle">Explore</div>
+                <div class="footer-menu-item">Countries</div>
+                <div class="footer-menu-item">Regions</div>
+                <div class="footer-menu-item">Cities</div>
+                <div class="footer-menu-item">Districts</div>
+                <div class="footer-menu-item">Attractions</div>
+              </div>
+            </div>
+            <div class="footer-menu-grid">
+              <div class="footer-menu">
+                <div class="footer-menu-subtitle">Trip</div>
+                <div class="footer-menu-item">Car rental</div>
+                <div class="footer-menu-item">Flight finder</div>
+                <div class="footer-menu-item">Restaurants reservations</div>
+                <div class="footer-menu-item">Travel communities</div>
+                <div class="footer-menu-item">Travel agencies</div>
+              </div>
+            </div>
+            <div class="footer-menu-grid">
+              <div class="footer-menu">
+                <div class="footer-menu-subtitle">Support</div>
+                <div class="footer-menu-item">Help center</div>
+                <div class="footer-menu-item">Customer Service</div>
+                <div class="footer-menu-item">Corporate contact</div>
+                <div class="footer-menu-item">Safety Resource Center</div>
+              </div>  
+            </div>
+            <div class="footer-menu-grid">
+              <div class="footer-menu">
+                <div class="footer-menu-subtitle">Booking.com</div>
+                <div class="footer-menu-item">About</div>
+                <div class="footer-menu-item">Careers</div>
+                <div class="footer-menu-item">Press Center</div>
+                <div class="footer-menu-item">Terms & Conditions</div>
+                <div class="footer-menu-item">Priacy & cookies statement</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="divider"></div>
+        <div class="footer-bottom">@ 2020 Anna Zhang</div>
       </div>
 
     </div>
