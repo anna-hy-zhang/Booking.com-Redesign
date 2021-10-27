@@ -8,4 +8,4 @@ This project started as a design exploration into modernizing the Booking.com we
 
 - HTML
 - CSS
-- Demo: https://anna-hy-zhang.github.io/Booking.com-Redesign/
+- Demo: https://anna-hy-zhang.github.io/booking-redesign/
